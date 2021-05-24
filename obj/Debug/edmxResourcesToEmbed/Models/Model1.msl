@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="Entities1">
+    <EntitySetMapping Name="AspNetUserRoles">
+      <EntityTypeMapping TypeName="Model.AspNetUserRole">
+        <MappingFragment StoreEntitySet="AspNetUserRoles">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUsers">
+      <EntityTypeMapping TypeName="Model.AspNetUser">
+        <MappingFragment StoreEntitySet="AspNetUsers">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Names" ColumnName="Names" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="EmailConfirmed" ColumnName="EmailConfirmed" />
+          <ScalarProperty Name="PasswordHash" ColumnName="PasswordHash" />
+          <ScalarProperty Name="SecurityStamp" ColumnName="SecurityStamp" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="PhoneNumberConfirmed" ColumnName="PhoneNumberConfirmed" />
+          <ScalarProperty Name="TwoFactorEnabled" ColumnName="TwoFactorEnabled" />
+          <ScalarProperty Name="LockoutEndDateUtc" ColumnName="LockoutEndDateUtc" />
+          <ScalarProperty Name="LockoutEnabled" ColumnName="LockoutEnabled" />
+          <ScalarProperty Name="AccessFailedCount" ColumnName="AccessFailedCount" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Room_Usage">
+      <EntityTypeMapping TypeName="Model.Room_Usage">
+        <MappingFragment StoreEntitySet="Room_Usage">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Room_Id" ColumnName="Room_Id" />
+          <ScalarProperty Name="Guest_Id" ColumnName="Guest_Id" />
+          <ScalarProperty Name="Hours" ColumnName="Hours" />
+          <ScalarProperty Name="Checkin" ColumnName="Checkin" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="ApplicationUser_Id" ColumnName="ApplicationUser_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Rooms">
+      <EntityTypeMapping TypeName="Model.Room">
+        <MappingFragment StoreEntitySet="Rooms">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="RType" ColumnName="RType" />
+          <ScalarProperty Name="Isactive" ColumnName="Isactive" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
